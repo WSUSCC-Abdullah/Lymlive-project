@@ -13,6 +13,8 @@ import { Profile } from './screens/Profile';
 import { Settings } from './screens/Settings';
 import { Updates } from './screens/Updates';
 import { NotFound } from './screens/NotFound';
+import LoginPage from './screens/Login';
+import SignupPage from './screens/Signup';
 
 const HomeTabs = createBottomTabNavigator({
   screens: {
@@ -57,6 +59,15 @@ const RootStack = createNativeStackNavigator({
       options: {
         title: 'Home',
         headerShown: false,
+      },
+    },
+    Login: {
+      screen: LoginPage,
+    },
+    Signup: {
+      screen: SignupPage, // Assuming Signup uses the same component for now
+      options: {
+        title: 'Signup',
       },
     },
     Profile: {

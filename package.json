@@ -6,10 +6,14 @@
     "start": "expo start --dev-client",
     "web": "expo start --web",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+  "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+  "format": "prettier --write ."
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",
+    "@expo/vector-icons": "^14.1.0",
     "@react-navigation/bottom-tabs": "^7.4.6",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.17",
@@ -32,6 +36,8 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~19.0.10",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
     "typescript": "~5.8.3"
   },
   "private": true
