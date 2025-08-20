@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Image, Button } from "react-native";
+import { useNavigation } from '@react-navigation/native';
 
 //css
 import loginStyles from "../../styles/Login/index.styles";
@@ -13,12 +14,12 @@ import loginStyles from "../../styles/Login/index.styles";
 const LoginPage = () => {
   const [emailPhone, setEmailPhone] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigation = useNavigation();
   const openLink = () => {
     // Logic to handle login action
     console.log("Login button pressed");
   };
-  
+
   return (
     <View style={loginStyles.wrapper}>
       <Text style={loginStyles.welcomeText}>Welcome to LYMLife</Text>
@@ -40,12 +41,12 @@ const LoginPage = () => {
         <Text style={loginStyles.forgot}>Forgot Password?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={loginStyles.loginBtn}>
-        <Button  onPress={openLink}  title={"login"}/>    
+       <Text style={loginStyles.loginText} onPress={openLink}>Login</Text>  
       </TouchableOpacity>
       <View style={loginStyles.signupRow}>
         <Text style={loginStyles.text}>Don't have an account? </Text>
         <TouchableOpacity>
-          <Text style={loginStyles.signup}>Signup</Text>
+          <Text style={loginStyles.signup} onPress={() => navigation.navigate("Signup")}>Signup</Text>
         </TouchableOpacity>
       </View>
       <View style={loginStyles.orRow}>

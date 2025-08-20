@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Image} from "react-native";
 import SignupStyles  from "../../styles/Signup/index.styles";
+import { useNavigation } from '@react-navigation/native';
 
 /**
  * Login screen component
@@ -13,6 +14,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [phonenumber, setPhoneNumber] = useState("");
   const [fullName, setfullName] = useState("");
+    const navigation = useNavigation();
 
   return (
     <View style={SignupStyles.wrapper}>
@@ -57,7 +59,7 @@ const LoginPage = () => {
       <View style={SignupStyles.loginRow}>
         <Text style={SignupStyles.text}>Already have an account? </Text>
         <TouchableOpacity>
-          <Text style={SignupStyles.login}>Login</Text>
+          <Text style={SignupStyles.login} onPress={() => navigation.navigate("Login")}>Login</Text>
         </TouchableOpacity>
       </View>
       <View style={SignupStyles.orRow}>

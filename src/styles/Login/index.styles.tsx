@@ -58,6 +58,7 @@ const loginStyles = StyleSheet.create({
     color: "#1877F2",
     fontWeight: "600",
     fontSize: 16,
+    cursor: 'pointer',
   },
   orRow: {
     flexDirection: "row",

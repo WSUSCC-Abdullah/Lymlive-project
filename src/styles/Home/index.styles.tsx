@@ -1,55 +1,39 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const homeStyles = StyleSheet.create({
-    initialtext: {
+  initialtext: {
     flex: 1,
     padding: 20,
-    // justifyContent: "center",
-    backgroundColor: "#ffffffff",
+    backgroundColor: '#ffffffff',
   },
   welcomeText: {
     fontSize: 40,
-    fontWeight: "bold",
-    textAlign: "center", 
-    color: "#1877F2", 
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#1877F2',
     marginBottom: 80,
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
-    textAlign: "center",
+    fontWeight: 'bold',
+    textAlign: 'center',
     marginBottom: 30,
   },
-  loginBtn: {
-    backgroundColor: "#1877F2",
-    padding: 20,
-    borderRadius: 12,
-    alignItems: "center",
-    marginBottom: 12,
-    width: "90%",
-   color: "#fff",
+  btn: {
+    backgroundColor: '#1877F2',
+    paddingVertical: 14,
+    paddingHorizontal: 40,
+    borderRadius: 8,
+    marginVertical: 10,
+    width: '90%',
+    alignItems: 'center',
+    height: 60,
   },
-  loginText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-     height: 70,
+  btnText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
-  signupBtn: {
-    backgroundColor: "#1877F2",
-    padding: 20,
-    borderRadius: 12,
-    alignItems: "center",
-    marginBottom: 20,
-    width: "90%"
-  },
-  signupText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-
 });
-
 
 export default homeStyles;
