@@ -15,7 +15,7 @@ export function HomePage() {
         onPress={() => navigation.navigate('Login')} // navigate to Login
       >
         <Text style={homeStyles.btnText}>
-          LogIn
+          Log In
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
@@ -23,7 +23,7 @@ export function HomePage() {
         onPress={() => navigation.navigate('Signup')} // navigate to Login
       >
         <Text style={homeStyles.btnText}>
-          Signup
+          Sign Up
         </Text>
       </TouchableOpacity>
     </View>

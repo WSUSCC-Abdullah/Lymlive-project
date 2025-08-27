@@ -19,7 +19,7 @@ const LoginPage = () => {
     // Logic to handle login action
     console.log("Login button pressed");
   };
-
+  
   return (
     <View style={loginStyles.wrapper}>
       <Text style={loginStyles.welcomeText}>Welcome to LYMLife</Text>
@@ -41,7 +41,7 @@ const LoginPage = () => {
         <Text style={loginStyles.forgot}>Forgot Password?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={loginStyles.loginBtn}>
-       <Text style={loginStyles.loginText} onPress={openLink}>Login</Text>  
+       <Text style={loginStyles.loginText}>Login</Text>  
       </TouchableOpacity>
       <View style={loginStyles.signupRow}>
         <Text style={loginStyles.text}>Don't have an account? </Text>
